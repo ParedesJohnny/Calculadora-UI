@@ -1,17 +1,15 @@
-import { Text, View, StyleSheet } from "react-native";
+import { View } from "react-native";
+import Display from "../components/Display";
+import Teclado from "../components/Teclado";
+import { styles } from "../styles/global-styles";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
+      <View style={styles.displayVacio}></View>
+      <Display />
+      <View style={styles.division}></View>
+      <Teclado />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
