@@ -8,7 +8,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    WorkSansLight: require("../../assets/fonts/Arimo-Regular.ttf"),
+    Arimo: require("../../assets/fonts/Arimo-Regular.ttf"),
   });
 
   useEffect(() => {

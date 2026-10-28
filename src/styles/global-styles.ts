@@ -29,28 +29,34 @@ export const styles = StyleSheet.create({
   },
   mainResult: {
     fontSize: 70,
+    fontFamily: "Arimo",
     color: Colors.textPrimary,
   },
   subResult: {
     fontSize: 40,
+    fontFamily: "Arimo",
     color: Colors.textSecondary,
     textAlign: "right",
     marginBottom: 8,
   },
   textPrimary: {
     fontSize: 55,
+    fontFamily: "Arimo",
     color: Colors.textPrimary,
   },
   textSecondary: {
     fontSize: 55,
+    fontFamily: "Arimo",
     color: Colors.textSecondary,
   },
   textTerciary: {
     fontSize: 55,
+    fontFamily: "Arimo",
     color: Colors.secondaryButton,
   },
   textC: {
     fontSize: 55,
+    fontFamily: "Arimo",
     color: Colors.textTerciary,
   },
   row: {
@@ -71,5 +77,19 @@ export const styles = StyleSheet.create({
     height: 4,
     backgroundColor: Colors.buttons,
     margin: 10,
+  },
+  toolbar: {
+    width: "100%",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingVertical: 10,
+  },
+  toolIcon: {
+    padding: 5,
+  },
+  deleteIconText: {
+    fontSize: 24,
+    color: Colors.textSecondary,
   },
 });
