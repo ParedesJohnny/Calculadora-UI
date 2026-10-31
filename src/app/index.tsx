@@ -11,10 +11,8 @@ export default function Index() {
   const handleButtonPress = (value: string) => {
     switch (value) {
       case "C":
-      case "AC":
         limpiar();
         break;
-      case "DEL":
       case "⌫":
         borrar();
         break;
@@ -31,7 +29,7 @@ export default function Index() {
     <View style={styles.container}>
       <View style={styles.displayVacio}></View>
       <Display formula={formula} result={result} />
-      <Toolbar />
+      <Toolbar onDeletePress={handleButtonPress} />
       <View style={styles.division}></View>
       <Teclado onpress={handleButtonPress} />
     </View>

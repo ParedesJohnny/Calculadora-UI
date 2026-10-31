@@ -1,22 +1,16 @@
-import { TouchableOpacity, View } from "react-native";
+import { View } from "react-native";
+import Button from "../components/Button";
 import { styles } from "../styles/global-styles";
-import { CustomText } from "./custom-text";
 
 interface ToolbarProps {
-  onDeletePress?: () => void;
+  onDeletePress?: (value: string) => void;
 }
 
 export default function Toolbar({ onDeletePress }: ToolbarProps) {
   return (
     <View style={styles.toolbar}>
       <View />
-      <TouchableOpacity
-        style={styles.toolIcon}
-        onPress={onDeletePress}
-        activeOpacity={0.7}
-      >
-        <CustomText style={styles.deleteIconText}>⌫</CustomText>
-      </TouchableOpacity>
+      <Button text="⌫" onPress={() => onDeletePress?.("⌫")} type="delete" />
     </View>
   );
 }

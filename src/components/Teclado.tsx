@@ -13,30 +13,30 @@ export default function CalculatorKeypad({ onpress }: TecladoProps) {
         <Button text="C" onPress={() => onpress("C")} type="normal" />
         <Button text="()" onPress={() => onpress("()")} type="normal" />
         <Button text="%" onPress={() => onpress("%")} type="normal" />
-        <Button text="÷" onPress={() => onpress("/")} type="secondary" />
+        <Button text="÷" onPress={() => onpress("÷")} type="secondary" />
       </View>
       <View style={styles.row}>
         <Button text="7" onPress={() => onpress("7")} type="normal" />
         <Button text="8" onPress={() => onpress("8")} type="normal" />
         <Button text="9" onPress={() => onpress("9")} type="normal" />
-        <Button text="X" onPress={() => onpress("")} type="secondary" />
+        <Button text="x" onPress={() => onpress("x")} type="secondary" />
       </View>
       <View style={styles.row}>
-        <Button text="4" onPress={() => onpress("")} type="normal" />
-        <Button text="5" onPress={() => onpress("")} type="normal" />
-        <Button text="6" onPress={() => onpress("")} type="normal" />
-        <Button text="-" onPress={() => onpress("")} type="secondary" />
+        <Button text="4" onPress={() => onpress("4")} type="normal" />
+        <Button text="5" onPress={() => onpress("5")} type="normal" />
+        <Button text="6" onPress={() => onpress("6")} type="normal" />
+        <Button text="-" onPress={() => onpress("-")} type="secondary" />
       </View>
       <View style={styles.row}>
-        <Button text="1" onPress={() => onpress("")} type="normal" />
-        <Button text="2" onPress={() => onpress("")} type="normal" />
-        <Button text="3" onPress={() => onpress("")} type="normal" />
-        <Button text="+" onPress={() => onpress("")} type="secondary" />
+        <Button text="1" onPress={() => onpress("1")} type="normal" />
+        <Button text="2" onPress={() => onpress("2")} type="normal" />
+        <Button text="3" onPress={() => onpress("3")} type="normal" />
+        <Button text="+" onPress={() => onpress("+")} type="secondary" />
       </View>
       <View style={styles.row}>
-        <Button text="0" onPress={() => onpress("")} type="normal" doble />
-        <Button text="." onPress={() => onpress("")} type="normal" />
-        <Button text="=" onPress={() => onpress("")} type="terciary" />
+        <Button text="0" onPress={() => onpress("0")} type="normal" doble />
+        <Button text="." onPress={() => onpress(".")} type="normal" />
+        <Button text="=" onPress={() => onpress("=")} type="terciary" />
       </View>
     </View>
   );

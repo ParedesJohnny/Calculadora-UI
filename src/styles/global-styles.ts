@@ -22,6 +22,11 @@ export const styles = StyleSheet.create({
   buttonTerciary: {
     backgroundColor: Colors.textSecondary,
   },
+  buttonDelete: {
+    backgroundColor: Colors.background,
+    width: BUTTON_SIZE / 3,
+    height: BUTTON_SIZE / 3,
+  },
   container: {
     flex: 1,
     backgroundColor: Colors.background,
@@ -83,10 +88,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingVertical: 10,
-  },
-  toolIcon: {
-    padding: 5,
+    paddingVertical: 0,
   },
   deleteIconText: {
     fontSize: 24,
