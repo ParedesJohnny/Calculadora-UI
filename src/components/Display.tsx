@@ -8,9 +8,18 @@ interface DisplayProps {
 }
 
 export default function CalculatorDisplay({ formula, result }: DisplayProps) {
+  const fontSize =
+    formula.length <= 7 ? 70 : Math.max(25, 70 - (formula.length - 7) * 4);
+
   return (
     <View style={styles.resultsContainer}>
-      <CustomText variant="big" style={styles.mainResult} numberOfLines={2}>
+      <CustomText
+        variant="big"
+        style={[styles.mainResult, { fontSize }]}
+        numberOfLines={1}
+        adjustsFontSizeToFit
+        minimumFontScale={0.35}
+      >
         {formula}
       </CustomText>
 

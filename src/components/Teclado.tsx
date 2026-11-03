@@ -19,7 +19,7 @@ export default function CalculatorKeypad({ onpress }: TecladoProps) {
         <Button text="7" onPress={() => onpress("7")} type="normal" />
         <Button text="8" onPress={() => onpress("8")} type="normal" />
         <Button text="9" onPress={() => onpress("9")} type="normal" />
-        <Button text="x" onPress={() => onpress("x")} type="secondary" />
+        <Button text="×" onPress={() => onpress("×")} type="secondary" />
       </View>
       <View style={styles.row}>
         <Button text="4" onPress={() => onpress("4")} type="normal" />

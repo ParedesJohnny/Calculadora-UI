@@ -5,7 +5,7 @@ import { CustomText } from "./custom-text";
 interface buttonProps {
   text: string;
   onPress: () => void;
-  type?: "normal" | "secondary" | "terciary" | "delete";
+  type?: "normal" | "secondary" | "terciary" | "delete" | "history";
   doble?: boolean;
 }
 
@@ -23,6 +23,8 @@ export default function Button({
         return styles.buttonSecondary;
       case "delete":
         return styles.buttonDelete;
+      case "history":
+        return styles.buttonDelete;
       default:
         return styles.buttonTerciary;
     }
@@ -33,6 +35,7 @@ export default function Button({
     if (type === "secondary") return styles.textSecondary;
     if (type === "terciary") return styles.textTerciary;
     if (type === "delete") return styles.deleteIconText;
+    if (type === "history") return styles.historyIconText;
     return styles.textPrimary;
   };
 
